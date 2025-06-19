@@ -31,8 +31,9 @@ args = parser.parse_args()
 assert args.top_k <= 256, "It is recommended that top_k is set lower than 256."
 
 set_seed(args.seed)
-device = 'cuda:0'
-model = Dalle.from_pretrained('minDALL-E/1.3B')  # This will automatically download the pretrained model.
+# device = 'cuda:0'
+device = 'cpu'
+model = Dalle.from_pretrained('/Users/chengxiaoqian/mindall-e/1.3B')  # This will automatically download the pretrained model.
 model.to(device=device)
 
 # Sampling
