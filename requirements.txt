@@ -8,3 +8,4 @@ einops
 omegaconf
 git+https://github.com/openai/CLIP.git
 matplotlib
+numpy==1.26.4
